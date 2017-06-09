@@ -36,8 +36,6 @@ class ArraySpek : Spek({
                 assertEquals(lists.include(4), true)
                 assertEquals(lists.include(10), false)
             }
-
-
         }
     }
 
@@ -81,9 +79,9 @@ class ArraySpek : Spek({
                 assertTrue(!contains)
             }
 
-            it("should return arrays/lists without null"){
-                val list = listOf(1,2,3,4,5,6,null,7,8,null,9)
-                val array = arrayOf(1,2,3,4,5,6,null,7,8,null,9)
+            it("should return arrays/lists without null") {
+                val list = listOf(1, 2, 3, 4, 5, 6, null, 7, 8, null, 9)
+                val array = arrayOf(1, 2, 3, 4, 5, 6, null, 7, 8, null, 9)
 
                 val compactList = list.compact()
                 val compactArray = array.compact()

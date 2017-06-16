@@ -36,7 +36,11 @@ dependencies {
 
     testCompile 'org.jetbrains.spek:spek-api:1.1.2'
     testRuntime 'org.jetbrains.spek:spek-junit-platform-engine:1.1.2'
+
     testCompile 'org.junit.platform:junit-platform-runner:1.0.0-M4'
+    testCompile 'org.opentest4j:opentest4j:1.0.0-M1'
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.0.0-M4'
+
 }
 
 

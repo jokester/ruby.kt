@@ -69,7 +69,7 @@ class ArraySpek : Spek({
                 lists.unshift(4)
                 lists.lsh(4)
                 lists.delete(4)
-                assertEquals(lists.length, 6)
+                assertEquals(lists.length, 9)
             }
 
             it("should trim all null for mutable") {
@@ -92,18 +92,3 @@ class ArraySpek : Spek({
         }
     }
 })
-
-fun <E> MutableList<E>.delete(element: E): E? = if (remove(element)) element else null
-
-fun <E> MutableList<E>.deleteAt(position: Int): E = removeAt(position)
-
-fun <T> MutableList<T>.shift() = removeAt(0)
-
-fun <T> MutableList<T>.pop() = removeAt(length - 1)
-
-fun <T> MutableList<T>.compact() = removeIf { it == null }
-
-fun <T> List<T>.compact() = filter { it != null }
-
-fun <T> Array<T>.compact() = filter { it != null }
-
